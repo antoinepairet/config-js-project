@@ -20,3 +20,35 @@ Package.json lint-staged:
         ]
     }
 ````
+
+.prettierc
+```
+{
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "write": true,
+    "tabWidth": 4,
+    "bracketSpacing": true
+}
+````
+
+.eslintrc.js
+````
+module.exports = {
+    env: {
+        es6: true,
+        node: true,
+        //browser: true,
+    },
+    globals: {
+        //_: true,
+        //angular: true,
+        //moment: true,
+    },
+    extends: ['prettier', 'eslint:recommended'],
+    rules: {
+        noConsole: false,
+        noIgnoredWarnings: true,
+    },
+};
+````
