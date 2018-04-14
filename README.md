@@ -1,13 +1,14 @@
 # config-js-project
 
 ````
-npm i --save-dev eslint eslint-config-prettier eslint-plugin-mocha husky lint-staged
+npm i --save-dev eslint eslint-config-prettier eslint-plugin-mocha husky lint-staged prettier
 ````
 
 Package.json scripts:
 ````
 "eslint": "eslint \"./**/*.js\"",
 "precommit": "lint-staged",
+"prettier": "prettier --write *js"
 ````
 
 Package.json lint-staged:
